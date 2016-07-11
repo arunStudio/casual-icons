@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+<g>
+	<polygon fill="#D2D3D4" points="334.375,525.987 336.936,525.987 336.936,518.112 332.235,510.882 325.651,506.896 
+		320.873,506.896 320.873,525.987 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M304.81,522.235v22.589c0,8.871,7.19,16.062,16.062,16.062c8.872,0,16.064-7.19,16.064-16.062v-20.962v-1.627
+		c0-8.871-7.192-16.063-16.064-16.063C312,506.173,304.81,513.364,304.81,522.235z"/>
+	
+		<line fill="#FFFFFF" stroke="#231F20" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="304.81" y1="526.862" x2="336.936" y2="526.862"/>
+	
+		<line fill="#FFFFFF" stroke="#231F20" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="320.873" y1="526.862" x2="320.873" y2="506.173"/>
+</g>
+<g>
+	<g>
+		<polygon fill="#D2D3D4" points="43.799,22.292 46.416,22.292 46.416,14.245 41.612,6.856 34.884,2.782 30,2.782 30,22.292 		"/>
+	</g>
+	<g>
+		<path fill="#231F20" d="M29.999,60c-10.178,0-18.458-8.28-18.458-18.457V18.458C11.541,8.281,19.821,0,29.999,0
+			c10.18,0,18.46,8.281,18.46,18.458v23.084C48.459,51.72,40.179,60,29.999,60z M29.999,4.088c-7.924,0-14.37,6.447-14.37,14.371
+			v23.084c0,7.924,6.446,14.369,14.37,14.369c7.926,0,14.373-6.445,14.373-14.369V18.458C44.372,10.535,37.925,4.088,29.999,4.088z"
+			/>
+	</g>
+	<g>
+		<line fill="#FFFFFF" x1="13.585" y1="23.187" x2="46.416" y2="23.187"/>
+		<path fill="#231F20" d="M46.416,25.23H13.585c-1.129,0-2.044-0.915-2.044-2.043c0-1.129,0.915-2.044,2.044-2.044h32.831
+			c1.128,0,2.043,0.915,2.043,2.044C48.459,24.315,47.544,25.23,46.416,25.23z"/>
+	</g>
+	<g>
+		<line fill="#FFFFFF" x1="30" y1="23.187" x2="30" y2="2.044"/>
+		<path fill="#231F20" d="M30,25.23c-1.129,0-2.044-0.915-2.044-2.043V2.044C27.956,0.915,28.871,0,30,0s2.045,0.915,2.045,2.044
+			v21.143C32.045,24.315,31.129,25.23,30,25.23z"/>
+	</g>
+</g>
+</svg>
