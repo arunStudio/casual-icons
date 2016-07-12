@@ -51,76 +51,115 @@ body {
 	.icon-box:hover a {
 		color: #fff;
 	}
+/*color background names*/
+.coral-bg,
+.cadetblue-bg,
+.crimson-bg,
+.tomato-bg,
+.yellowgreen-bg,
+.violet-bg,
+.turquoise-bg,
+.thistle-bg,
+.teal-bg,
+.steelblue-bg,
+.tan-bg,
+.skyblue-bg,
+.sandybrown-bg,
+.salmon-bg,
+.peru-bg,
+.palevioletred-bg,
+.olivedrab-bg,
+.orangered-bg {
+	transition: all .8s;
+}
 
 /*hover-backgrounds*/
 .coral-bg:hover{
 	background-color: coral;
+	transition: all .8s;
 }
 
 .cadetblue-bg:hover{
 	background-color: cadetblue;
+	transition: all .8s;
 }
 
 .crimson-bg:hover{
 	background-color: crimson;
+	transition: all .8s;
 }
 
 .tomato-bg:hover{
 	background-color: tomato;
+	transition: all .8s;
 }
 
 .yellowgreen-bg:hover{
 	background-color: yellowgreen;
+	transition: all .8s;
 }
 
 .violet-bg:hover{
 	background-color: violet;
+	transition: all .8s;
 }
 
 .turquoise-bg:hover{
 	background-color: turquoise;
+	transition: all .8s;
 }
 
 .thistle-bg:hover{
 	background-color: thistle;
+	transition: all .8s;
 }
 
 .teal-bg:hover{
 	background-color: teal;
+	transition: all .8s;
 }
 
 .steelblue-bg:hover{
 	background-color: steelblue;
+	transition: all .8s;
 }
 
 .tan-bg:hover{
 	background-color: tan;
+	transition: all .8s;
 }
 
 .skyblue-bg:hover{
 	background-color: skyblue;
+	transition: all .8s;
 }
 
 .sandybrown-bg:hover{
 	background-color: sandybrown;
+	transition: all .8s;
 }
 
 .salmon-bg:hover{
 	background-color: salmon;
+	transition: all .8s;
 }
 
 .peru-bg:hover{
 	background-color: peru;
+	transition: all .8s;
 }
 
 .palevioletred-bg:hover{
 	background-color: palevioletred;
+	transition: all .8s;
 }
 
 .olivedrab-bg:hover{
 	background-color: olivedrab;
+	transition: all .8s;
 }
 
 .orangered-bg:hover{
 	background-color: orangered;
+	transition: all .8s;
 }
