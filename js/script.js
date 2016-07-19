@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	$('.main-content .icon-box').css({
 		height: '200px',
-		transition: 'height 1s ease 1s',
+		transition: 'height .8s ease 1s',
 	});
 
 	$('.main-content .icon-box').mouseleave(function() {

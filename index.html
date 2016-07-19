@@ -16,7 +16,7 @@
             $(window).load(function() { // makes sure the whole site is loaded
                 $('#status').fadeOut(); // will first fade out the loading animation
                 $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-                $('body').delay(350).css({'overflow':'visible'});
+                $('body').delay(350).css({'overflow':'visible'}).removeClass("preload");
             })
         //]]>
     </script>
@@ -32,7 +32,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,7 +41,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="preload">
   <!-- Preloader -->
   <div id="preloader">
       <div id="status">&nbsp;</div>
@@ -681,12 +681,6 @@
       </div>
     </div>
 
-    <!-- Preloaded script -->
-    <script type="text/javascript">
-      $(window).load(function() {
-        $("body").removeClass("preload");
-      });
-    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
