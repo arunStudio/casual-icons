@@ -81,6 +81,7 @@ body.preload {
 .main-content .icon-box {
 	height: 500px;
 	text-transform: uppercase;
+	padding: 200px 0;
 }
 
 .icon-box.open {

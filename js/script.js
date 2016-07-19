@@ -5,10 +5,10 @@ $(document).ready(function() {
 	// 	transition: 'all 1s ease 1s',
 	// });
 
-	$('.main-content .icon-box').css({
-		height: '200px',
-		transition: 'height .8s ease 1s',
-	});
+	// $('.main-content .icon-box').css({
+	// 	height: '200px',
+	// 	transition: 'height .8s ease 1s',
+	// });
 
 	$('.main-content .icon-box').mouseleave(function() {
 		$('.icon-box').css({
