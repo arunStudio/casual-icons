@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	$('.main-content').css({
-		top: '300px',
-		opacity: '1',
-		transition: 'all 1s ease 1s',
-	});
+	// $('.main-content').css({
+	// 	top: '300px',
+	// 	opacity: '1',
+	// 	transition: 'all 1s ease 1s',
+	// });
 
 	$('.main-content .icon-box').css({
 		height: '200px',
