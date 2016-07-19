@@ -3,41 +3,84 @@ body {
 	font-size: 14px;
 }
 
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99999999; /* makes sure it stays on top */
+    background: linear-gradient(135deg,  #3023ae 0%,#c86dd7 100%)
+}
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../images/preloader.svg); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
 /*Header - styles*/
 .main-header {
 	text-align: left;
 	background-color: #ff5858;
 	box-shadow: 0px 2px 5px 0px rgba(0,0,0,.2);
+	height: 370px;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
 }
+
+	.logo-img {
+		width: 70px;
+		margin: 90px auto 20px;
+	}
 	
 	.main-header .main-logo {
-		line-height: 70px;
-		font-size: 16px;
-		font-weight: bold;
+		font-size: 24px;
+		font-weight: normal;
 		text-transform: uppercase;
 		color: #fff;
     	text-shadow: 0px 2px 0px rgba(0,0,0,0.3);
 	}
 
+	.main-header p {
+		opacity: .5;
+		line-height: 36px;
+	}
+
 /*Main Content area styles*/
 .main-content {
 	text-align: center;
-	transition: top 1s ease;
+	transition: top 1s ease 1s;
 	position: relative;
-	top: 200px;
+	top: 370px;
+	opacity: 0;
+	z-index: 9999;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.3);
 }
 
 /*Icon-box styles*/
 .main-content .icon-box {
-	height: 200px;
+	height: 500px;
 	text-transform: uppercase;
 }
 
 .icon-box.open {
 	position: fixed;
-    z-index: 99;
+    z-index: 99999;
     width: 100vw;
-    height: 100vh;
+    height: 100vh !important;
     top: 0;
     left: 0;
 }
@@ -86,10 +129,10 @@ body {
 	.icon-box:hover a {
 		color: #fff;
 	}
+
 .close-icon {
 	opacity: 0;
-	transition: opacity .2s ease;
-	transition-delay: .6s;
+	transition: opacity .2s ease .6s;
 }
 
 .open ~ .close-icon {
@@ -102,8 +145,7 @@ body {
     padding: 3px 15px;
     border-radius: 15px;
     opacity: 1;
-	transition: opacity .2s ease;
-	transition-delay: .6s;
+	transition: opacity .2s ease .6s;
 }
 
 /*color background names*/
@@ -146,7 +188,7 @@ body {
 .palevioletred-bg:hover,
 .olivedrab-bg:hover,
 .orangered-bg:hover {
-	transition: all .4s ease;
+	transition: all .4s ease !important;
 }
 
 /*hover-backgrounds*/
@@ -220,4 +262,9 @@ body {
 
 .orangered-bg:hover, .orangered-bg.open{
 	background-color: orangered;
+}
+
+.thanks-box h1{
+	line-height: 200px;
+	color: #ff5858;
 }

@@ -7,6 +7,21 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Casual Icons</title>
 
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script>
+    <!-- End Preloader -->
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles -->
@@ -16,6 +31,9 @@
     <!-- Google font link -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,119 +42,134 @@
     <![endif]-->
   </head>
   <body>
+  <!-- Preloader -->
+  <div id="preloader">
+      <div id="status">&nbsp;</div>
+  </div>
     <!-- the header area - with logo and nav -->
     <header class="main-header" role="banner" id="top">
-      <div class="container-fluid">
-        <div class="col-md-12 main-logo">Casual-Icons :)</div>
+      <div class="container">
+        <div class="logo-img">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 56" class="undefined">
+            <style type="text/css" class="undefined">  
+              .st0{opacity:0.3;}
+              .st1{fill:#FFFFFF;}
+            </style>
+              <g class="st0" class="undefined"><path d="M42.2 34.2c2.7 1.6 5.6 2.5 8.8 2.5 4.7 0 8.7-1.6 12-4.9s5-7.3 5-11.9c0-4.7-1.7-8.7-5-12s-7.3-5-11.8-5c-4.5 0-8.4 1.5-11.6 4.5 -2.3 2.1-3.8 4.6-4.7 7.3 -0.9-2.8-2.4-5.2-4.7-7.3 -3.2-3-7.1-4.5-11.6-4.5 -4.5 0-8.5 1.7-11.8 5s-5 7.3-5 12c0 4.7 1.7 8.6 5 11.9s7.3 4.9 12 4.9c3.2 0 6.1-0.8 8.8-2.5 2.7-1.6 4.7-3.8 6.1-6.6 -0.5 5.8-2.1 10.9-4.6 15.3 -3.9 6.5-9.4-0.1-16.6 0.3 -0.2 0-0.5 0.1-0.6 0.3 -0.2 0.2-0.2 10.4-0.2 10.6 0 0.6 0.3 1 1 1 3.8-0.1 7.3-1.2 10.3-3.1 3-1.9 5.5-4.4 7.3-7.4 1.8-3.1 3.2-6.4 4.2-10.1 0.1-0.6 0.3-1.1 0.4-1.7 0.1 0.5 0.2 1.1 0.4 1.7 0.9 3.7 2.3 7.1 4.2 10.1 1.8 3.1 4.3 5.5 7.3 7.4 3 1.9 6.5 2.9 10.3 3.1 0.6 0 1-0.3 1-1 0-0.2 0-10.4-0.2-10.6 -0.2-0.2-0.4-0.3-0.6-0.3 -7.2-0.3-12.7 6.2-16.6-0.3 -2.5-4.4-4.1-9.5-4.6-15.3C37.5 30.4 39.6 32.6 42.2 34.2zM42.2 19.1v-0.2c0.2-2.3 1.2-4.2 2.9-5.8 1.7-1.6 3.7-2.3 6.1-2.3s1.5 3.9 3.3 5.6c1.8 1.8 5.7 0.9 5.7 3.4 0 2.5-3.9 1.6-5.7 3.4 -1.8 1.8-0.9 5.6-3.4 5.6 -2.5 0-4.6-0.9-6.3-2.6 -1.8-1.8-2.6-3.9-2.6-6.3C42.1 19.5 42.1 19.3 42.2 19.1zM25.3 26.2c-1.8 1.8-3.9 2.6-6.3 2.6 -2.5 0-1.6-4.9-3.4-6.6 -1.8-1.8-5.7 0.1-5.7-2.4 0-2.5 3.9-1.6 5.7-3.4 1.8-1.8 0.9-5.6 3.3-5.6s4.5 0.8 6.1 2.3c1.7 1.6 2.7 3.5 2.9 5.8v0.2c0 0.1 0 0.4 0 0.7C27.9 22.3 27 24.4 25.3 26.2z" class="undefined"/></g>
+              <path class="st1" d="M42.2 33.2c2.7 1.6 5.6 2.5 8.8 2.5 4.7 0 8.7-1.6 12-4.9s5-7.3 5-11.9c0-4.7-1.7-8.7-5-12s-7.3-5-11.8-5c-4.5 0-8.4 1.5-11.6 4.5 -2.3 2.1-3.8 4.6-4.7 7.3 -0.9-2.8-2.4-5.2-4.7-7.3 -3.2-3-7.1-4.5-11.6-4.5 -4.5 0-8.5 1.7-11.8 5s-5 7.3-5 12c0 4.7 1.7 8.6 5 11.9s7.3 4.9 12 4.9c3.2 0 6.1-0.8 8.8-2.5 2.7-1.6 4.7-3.8 6.1-6.6 -0.5 5.8-2.1 10.9-4.6 15.3 -3.9 6.5-9.4-0.1-16.6 0.3 -0.2 0-0.5 0.1-0.6 0.3 -0.2 0.2-0.2 10.4-0.2 10.6 0 0.6 0.3 1 1 1 3.8-0.1 7.3-1.2 10.3-3.1 3-1.9 5.5-4.4 7.3-7.4 1.8-3.1 3.2-6.4 4.2-10.1 0.1-0.6 0.3-1.1 0.4-1.7 0.1 0.5 0.2 1.1 0.4 1.7 0.9 3.7 2.3 7.1 4.2 10.1 1.8 3.1 4.3 5.5 7.3 7.4 3 1.9 6.5 2.9 10.3 3.1 0.6 0 1-0.3 1-1 0-0.2 0-10.4-0.2-10.6 -0.2-0.2-0.4-0.3-0.6-0.3 -7.2-0.3-12.7 6.2-16.6-0.3 -2.5-4.4-4.1-9.5-4.6-15.3C37.5 29.4 39.6 31.6 42.2 33.2zM42.2 18.1v-0.2c0.2-2.3 1.2-4.2 2.9-5.8 1.7-1.6 3.7-2.3 6.1-2.3s1.5 3.9 3.3 5.6c1.8 1.8 5.7 0.9 5.7 3.4 0 2.5-3.9 1.6-5.7 3.4 -1.8 1.8-0.9 5.6-3.4 5.6 -2.5 0-4.6-0.9-6.3-2.6 -1.8-1.8-2.6-3.9-2.6-6.3C42.1 18.5 42.1 18.3 42.2 18.1zM25.3 25.2c-1.8 1.8-3.9 2.6-6.3 2.6 -2.5 0-1.6-4.9-3.4-6.6 -1.8-1.8-5.7 0.1-5.7-2.4 0-2.5 3.9-1.6 5.7-3.4 1.8-1.8 0.9-5.6 3.3-5.6s4.5 0.8 6.1 2.3c1.7 1.6 2.7 3.5 2.9 5.8v0.2c0 0.1 0 0.4 0 0.7C27.9 21.3 27 23.4 25.3 25.2z" class="undefined"/>
+          </svg>
+        </div>
+        <div class="col-md-12 main-logo">Casual Icons</div>
+        <p>a set of 99 greyscale svg icons - by Arun Jacob</p>
       </div>
     </header>
     <!-- header ends -->
-    <div class="container-fluid main-content">
+    <div class="container main-content">
       <div class="row">
         <!-- devices icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box coral-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box coral-bg">
           <div class="icons-img devices"></div>
           <h1>devices</h1>
           <a href="images/devices.svg" download="devices.svg">svg</a>
         </div>
         <!-- laptop icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box cadetblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box cadetblue-bg">
           <div class="icons-img laptop"></div>
           <h1>laptop</h1>
           <a href="images/laptop.svg" download="download svg icon">svg</a>
         </div>
         <!-- camera icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box crimson-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box crimson-bg">
           <div class="icons-img camera"></div>
           <h1>camera</h1>
           <a href="images/camera.svg" download="download svg icon">svg</a>
         </div>
         <!-- audio icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tomato-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tomato-bg">
           <div class="icons-img audio"></div>
           <h1>audio</h1>
           <a href="images/audio.svg" download="download svg icon">svg</a>
         </div>
         <!-- watch icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box yellowgreen-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box yellowgreen-bg">
           <div class="icons-img watch"></div>
           <h1>watch</h1>
           <a href="images/watch.svg" download="download svg icon">svg</a>
         </div>
         <!-- display icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box violet-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box violet-bg">
           <div class="icons-img display"></div>
           <h1>display</h1>
           <a href="images/display.svg" download="download svg icon">svg</a>
         </div>
         <!-- gaming icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box turquoise-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box turquoise-bg">
           <div class="icons-img gaming"></div>
           <h1>gaming</h1>
           <a href="images/gaming.svg" download="download svg icon">svg</a>
         </div>
         <!-- mouse icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box thistle-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box thistle-bg">
           <div class="icons-img mouse"></div>
           <h1>mouse</h1>
           <a href="images/mouse.svg" download="download svg icon">svg</a>
         </div>
         <!-- pen icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box teal-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box teal-bg">
           <div class="icons-img pen"></div>
           <h1>pen</h1>
           <a href="images/pen.svg" download="download svg icon">svg</a>
         </div>
         <!-- shop icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box steelblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box steelblue-bg">
           <div class="icons-img shop"></div>
           <h1>shop</h1>
           <a href="images/shop.svg" download="download svg icon">svg</a>
         </div>
         <!-- chat icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tan-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tan-bg">
           <div class="icons-img chat"></div>
           <h1>chat</h1>
           <a href="images/chat.svg" download="download svg icon">svg</a>
         </div>
         <!-- bed icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box skyblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box skyblue-bg">
           <div class="icons-img bed"></div>
           <h1>bed</h1>
           <a href="images/bed.svg" download="download svg icon">svg</a>
         </div>
         <!-- food icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box sandybrown-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box sandybrown-bg">
           <div class="icons-img food"></div>
           <h1>food</h1>
           <a href="images/food.svg" download="download svg icon">svg</a>
         </div>
         <!-- milk icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box salmon-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box salmon-bg">
           <div class="icons-img milk"></div>
           <h1>milk</h1>
           <a href="images/milk.svg" download="download svg icon">svg</a>
         </div>
         <!-- duck icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box peru-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box peru-bg">
           <div class="icons-img duck"></div>
           <h1>duck</h1>
           <a href="images/duck.svg" download="download svg icon">svg</a>
         </div>
         <!-- book icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box palevioletred-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box palevioletred-bg">
           <div class="icons-img book"></div>
           <h1>book</h1>
           <a href="images/book.svg" download="download svg icon">svg</a>
         </div>
         <!-- heart icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box olivedrab-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box olivedrab-bg">
           <div class="icons-img heart"></div>
           <h1>heart</h1>
           <a href="images/heart.svg" download="download svg icon">svg</a>
         </div>
         <!-- user icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box orangered-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box orangered-bg">
           <div class="icons-img user"></div>
           <h1>user</h1>
           <a href="images/user.svg" download="download svg icon">svg</a>
@@ -144,109 +177,109 @@
         <!-- The background color on hover ends here - so repear from 'devices' to user again -->
 
         <!-- rocket icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box coral-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box coral-bg">
           <div class="icons-img rocket"></div>
           <h1>rocket</h1>
           <a href="images/rocket.svg" download="download svg icon">svg</a>
         </div>
         <!-- flower icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box cadetblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box cadetblue-bg">
           <div class="icons-img flower"></div>
           <h1>flower</h1>
           <a href="images/flower.svg" download="download svg icon">svg</a>
         </div>
         <!-- basketball icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box crimson-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box crimson-bg">
           <div class="icons-img basketball"></div>
           <h1>basketball</h1>
           <a href="images/basketball.svg" download="download svg icon">svg</a>
         </div>
         <!-- alarm icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tomato-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tomato-bg">
           <div class="icons-img alarm"></div>
           <h1>alarm</h1>
           <a href="images/alarm.svg" download="download svg icon">svg</a>
         </div>
         <!-- shoes icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box yellowgreen-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box yellowgreen-bg">
           <div class="icons-img shoes"></div>
           <h1>shoes</h1>
           <a href="images/shoes.svg" download="download svg icon">svg</a>
         </div>
         <!-- rice icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box violet-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box violet-bg">
           <div class="icons-img rice"></div>
           <h1>rice</h1>
           <a href="images/rice.svg" download="download svg icon">svg</a>
         </div>
         <!-- lock icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box turquoise-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box turquoise-bg">
           <div class="icons-img lock"></div>
           <h1>lock</h1>
           <a href="images/lock.svg" download="download svg icon">svg</a>
         </div>
         <!-- weather icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box thistle-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box thistle-bg">
           <div class="icons-img weather"></div>
           <h1>weather</h1>
           <a href="images/weather.svg" download="download svg icon">svg</a>
         </div>
         <!-- ice-cream icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box teal-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box teal-bg">
           <div class="icons-img ice-cream"></div>
           <h1>ice-cream</h1>
           <a href="images/ice-cream.svg" download="download svg icon">svg</a>
         </div>
         <!-- egg icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box steelblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box steelblue-bg">
           <div class="icons-img egg"></div>
           <h1>egg</h1>
           <a href="images/egg.svg" download="download svg icon">svg</a>
         </div>
         <!-- glasses icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tan-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tan-bg">
           <div class="icons-img glasses"></div>
           <h1>glasses</h1>
           <a href="images/glasses.svg" download="download svg icon">svg</a>
         </div>
         <!-- coffee icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box skyblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box skyblue-bg">
           <div class="icons-img coffee"></div>
           <h1>coffee</h1>
           <a href="images/coffee.svg" download="download svg icon">svg</a>
         </div>
         <!-- sale icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box sandybrown-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box sandybrown-bg">
           <div class="icons-img sale"></div>
           <h1>sale</h1>
           <a href="images/sale.svg" download="download svg icon">svg</a>
         </div>
         <!-- beer icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box salmon-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box salmon-bg">
           <div class="icons-img beer"></div>
           <h1>beer</h1>
           <a href="images/beer.svg" download="download svg icon">svg</a>
         </div>
         <!-- inbox icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box peru-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box peru-bg">
           <div class="icons-img inbox"></div>
           <h1>inbox</h1>
           <a href="images/inbox.svg" download="download svg icon">svg</a>
         </div>
         <!-- umberlla icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box palevioletred-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box palevioletred-bg">
           <div class="icons-img umberlla"></div>
           <h1>umberlla</h1>
           <a href="images/umberlla.svg" download="download svg icon">svg</a>
         </div>
         <!-- earth icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box olivedrab-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box olivedrab-bg">
           <div class="icons-img earth"></div>
           <h1>earth</h1>
           <a href="images/earth.svg" download="download svg icon">svg</a>
         </div>
         <!-- flash icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box orangered-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box orangered-bg">
           <div class="icons-img flash"></div>
           <h1>flash</h1>
           <a href="images/flash.svg" download="download svg icon">svg</a>
@@ -254,109 +287,109 @@
         <!-- The background color on hover ends here - so repear from 'devices' to user again -->
 
         <!-- plant icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box coral-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box coral-bg">
           <div class="icons-img plant"></div>
           <h1>plant</h1>
           <a href="images/plant.svg" download="download svg icon">svg</a>
         </div>
         <!-- compass icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box cadetblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box cadetblue-bg">
           <div class="icons-img compass"></div>
           <h1>compass</h1>
           <a href="images/compass.svg" download="download svg icon">svg</a>
         </div>
         <!-- skull icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box crimson-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box crimson-bg">
           <div class="icons-img skull"></div>
           <h1>skull</h1>
           <a href="images/skull.svg" download="download svg icon">svg</a>
         </div>
         <!-- medicine icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tomato-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tomato-bg">
           <div class="icons-img medicine"></div>
           <h1>medicine</h1>
           <a href="images/medicine.svg" download="download svg icon">svg</a>
         </div>
         <!-- photos icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box yellowgreen-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box yellowgreen-bg">
           <div class="icons-img photos"></div>
           <h1>photos</h1>
           <a href="images/photos.svg" download="download svg icon">svg</a>
         </div>
         <!-- peach icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box violet-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box violet-bg">
           <div class="icons-img peach"></div>
           <h1>peach</h1>
           <a href="images/peach.svg" download="download svg icon">svg</a>
         </div>
         <!-- watermelon icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box turquoise-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box turquoise-bg">
           <div class="icons-img watermelon"></div>
           <h1>watermelon</h1>
           <a href="images/watermelon.svg" download="download svg icon">svg</a>
         </div>
         <!-- lamp icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box thistle-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box thistle-bg">
           <div class="icons-img lamp"></div>
           <h1>lamp</h1>
           <a href="images/lamp.svg" download="download svg icon">svg</a>
         </div>
         <!-- map-pin icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box teal-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box teal-bg">
           <div class="icons-img map-pin"></div>
           <h1>map pin</h1>
           <a href="images/map-pin.svg" download="download svg icon">svg</a>
         </div>
         <!-- crown icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box steelblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box steelblue-bg">
           <div class="icons-img crown"></div>
           <h1>crown</h1>
           <a href="images/crown.svg" download="download svg icon">svg</a>
         </div>
         <!-- note icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tan-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tan-bg">
           <div class="icons-img note"></div>
           <h1>note</h1>
           <a href="images/note.svg" download="download svg icon">svg</a>
         </div>
         <!-- search icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box skyblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box skyblue-bg">
           <div class="icons-img search"></div>
           <h1>search</h1>
           <a href="images/search.svg" download="download svg icon">svg</a>
         </div>
         <!-- mail icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box sandybrown-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box sandybrown-bg">
           <div class="icons-img mail"></div>
           <h1>mail</h1>
           <a href="images/mail.svg" download="download svg icon">svg</a>
         </div>
         <!-- ghost icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box salmon-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box salmon-bg">
           <div class="icons-img ghost"></div>
           <h1>ghost</h1>
           <a href="images/ghost.svg" download="download svg icon">svg</a>
         </div>
         <!-- robot icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box peru-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box peru-bg">
           <div class="icons-img robot"></div>
           <h1>robot</h1>
           <a href="images/robot.svg" download="download svg icon">svg</a>
         </div>
         <!-- ice-cream2 icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box palevioletred-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box palevioletred-bg">
           <div class="icons-img ice-cream2"></div>
           <h1>ice cream 2</h1>
           <a href="images/ice-cream2.svg" download="download svg icon">svg</a>
         </div>
         <!-- radio icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box olivedrab-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box olivedrab-bg">
           <div class="icons-img radio"></div>
           <h1>radio</h1>
           <a href="images/radio.svg" download="download svg icon">svg</a>
         </div>
         <!-- speaker icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box orangered-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box orangered-bg">
           <div class="icons-img speaker"></div>
           <h1>speaker</h1>
           <a href="images/speaker.svg" download="download svg icon">svg</a>
@@ -364,109 +397,109 @@
         <!-- The background color on hover ends here - so repear from 'devices' to user again -->
 
         <!-- compact-disc icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box coral-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box coral-bg">
           <div class="icons-img compact-disc"></div>
           <h1>compact disc</h1>
           <a href="images/compact-disc.svg" download="download svg icon">svg</a>
         </div>
         <!-- fire icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box cadetblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box cadetblue-bg">
           <div class="icons-img fire"></div>
           <h1>fire</h1>
           <a href="images/fire.svg" download="download svg icon">svg</a>
         </div>
         <!-- idea icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box crimson-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box crimson-bg">
           <div class="icons-img idea"></div>
           <h1>idea</h1>
           <a href="images/idea.svg" download="download svg icon">svg</a>
         </div>
         <!-- lab icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tomato-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tomato-bg">
           <div class="icons-img lab"></div>
           <h1>lab</h1>
           <a href="images/lab.svg" download="download svg icon">svg</a>
         </div>
         <!-- drum-stick icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box yellowgreen-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box yellowgreen-bg">
           <div class="icons-img drum-stick"></div>
           <h1>drum stick</h1>
           <a href="images/drum-stick.svg" download="download svg icon">svg</a>
         </div>
         <!-- calendar icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box violet-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box violet-bg">
           <div class="icons-img calendar"></div>
           <h1>calendar</h1>
           <a href="images/calendar.svg" download="download svg icon">svg</a>
         </div>
         <!-- pizza icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box turquoise-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box turquoise-bg">
           <div class="icons-img pizza"></div>
           <h1>pizza</h1>
           <a href="images/pizza.svg" download="download svg icon">svg</a>
         </div>
         <!-- help icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box thistle-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box thistle-bg">
           <div class="icons-img help"></div>
           <h1>help</h1>
           <a href="images/help.svg" download="download svg icon">svg</a>
         </div>
         <!-- study icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box teal-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box teal-bg">
           <div class="icons-img study"></div>
           <h1>study</h1>
           <a href="images/study.svg" download="download svg icon">svg</a>
         </div>
         <!-- timer icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box steelblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box steelblue-bg">
           <div class="icons-img timer"></div>
           <h1>timer</h1>
           <a href="images/timer.svg" download="download svg icon">svg</a>
         </div>
         <!-- plane icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tan-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tan-bg">
           <div class="icons-img plane"></div>
           <h1>plane</h1>
           <a href="images/plane.svg" download="download svg icon">svg</a>
         </div>
         <!-- shopping-cart icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box skyblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box skyblue-bg">
           <div class="icons-img shopping-cart"></div>
           <h1>shopping-cart</h1>
           <a href="images/shopping-cart.svg" download="download svg icon">svg</a>
         </div>
         <!-- cake icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box sandybrown-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box sandybrown-bg">
           <div class="icons-img cake"></div>
           <h1>cake</h1>
           <a href="images/cake.svg" download="download svg icon">svg</a>
         </div>
         <!-- nut icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box salmon-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box salmon-bg">
           <div class="icons-img nut"></div>
           <h1>nut</h1>
           <a href="images/nut.svg" download="download svg icon">svg</a>
         </div>
         <!-- batch icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box peru-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box peru-bg">
           <div class="icons-img batch"></div>
           <h1>batch</h1>
           <a href="images/batch.svg" download="download svg icon">svg</a>
         </div>
         <!-- clipboard icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box palevioletred-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box palevioletred-bg">
           <div class="icons-img clipboard"></div>
           <h1>clipboard</h1>
           <a href="images/clipboard.svg" download="download svg icon">svg</a>
         </div>
         <!-- shield icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box olivedrab-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box olivedrab-bg">
           <div class="icons-img shield"></div>
           <h1>shield</h1>
           <a href="images/shield.svg" download="download svg icon">svg</a>
         </div>
         <!-- anchor icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box orangered-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box orangered-bg">
           <div class="icons-img anchor"></div>
           <h1>anchor</h1>
           <a href="images/anchor.svg" download="download svg icon">svg</a>
@@ -474,51 +507,186 @@
         <!-- The background color on hover ends here - so repear from 'devices' to user again -->
 
         <!-- map icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box coral-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box coral-bg">
           <div class="icons-img map"></div>
           <h1>map</h1>
           <a href="images/map.svg" download="download svg icon">svg</a>
         </div>
         <!-- wallet icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box cadetblue-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box cadetblue-bg">
           <div class="icons-img wallet"></div>
           <h1>wallet</h1>
           <a href="images/wallet.svg" download="download svg icon">svg</a>
         </div>
         <!-- cooked icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box crimson-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box crimson-bg">
           <div class="icons-img cooked"></div>
           <h1>cooked</h1>
           <a href="images/cooked.svg" download="download svg icon">svg</a>
         </div>
         <!-- door icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box tomato-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tomato-bg">
           <div class="icons-img door"></div>
           <h1>door</h1>
           <a href="images/door.svg" download="download svg icon">svg</a>
         </div>
         <!-- landscape icon -->
-        <div class="col-lg-2 col-md-3 col-sm-4 icon-box yellowgreen-bg">
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box yellowgreen-bg">
           <div class="icons-img landscape"></div>
           <h1>landscape</h1>
           <a href="images/landscape.svg" download="download svg icon">svg</a>
         </div>
+        <!-- hotel icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box violet-bg">
+          <div class="icons-img hotel"></div>
+          <h1>hotel</h1>
+          <a href="images/hotel.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- iglo icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box turquoise-bg">
+          <div class="icons-img iglo"></div>
+          <h1>iglo</h1>
+          <a href="images/iglo.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- backpack icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box thistle-bg">
+          <div class="icons-img backpack"></div>
+          <h1>backpack</h1>
+          <a href="images/backpack.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- briefcase icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box teal-bg">
+          <div class="icons-img briefcase"></div>
+          <h1>briefcase</h1>
+          <a href="images/briefcase.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- church icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box steelblue-bg">
+          <div class="icons-img church"></div>
+          <h1>church</h1>
+          <a href="images/church.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- boots icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tan-bg">
+          <div class="icons-img boots"></div>
+          <h1>boots</h1>
+          <a href="images/boots.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- paint-brush icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box skyblue-bg">
+          <div class="icons-img paint-brush"></div>
+          <h1>paint brush</h1>
+          <a href="images/paint-brush.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- pallet icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box sandybrown-bg">
+          <div class="icons-img pallet"></div>
+          <h1>pallet</h1>
+          <a href="images/pallet.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- popcorn icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box salmon-bg">
+          <div class="icons-img popcorn"></div>
+          <h1>popcorn</h1>
+          <a href="images/popcorn.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- video icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box peru-bg">
+          <div class="icons-img video"></div>
+          <h1>video</h1>
+          <a href="images/video.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- terminal icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box palevioletred-bg">
+          <div class="icons-img terminal"></div>
+          <h1>terminal</h1>
+          <a href="images/terminal.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- calculator icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box olivedrab-bg">
+          <div class="icons-img calculator"></div>
+          <h1>calculator</h1>
+          <a href="images/calculator.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- floppy-disk icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box orangered-bg">
+          <div class="icons-img floppy-disk"></div>
+          <h1>floppy disk</h1>
+          <a href="images/floppy-disk.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- The background color on hover ends here - so repear from 'devices' to user again -->
 
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
+        <!-- folder icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box coral-bg">
+          <div class="icons-img folder"></div>
+          <h1>folder</h1>
+          <a href="images/folder.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- printer icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box cadetblue-bg">
+          <div class="icons-img printer"></div>
+          <h1>printer</h1>
+          <a href="images/printer.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- cat icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box crimson-bg">
+          <div class="icons-img cat"></div>
+          <h1>cat</h1>
+          <a href="images/cat.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- teddy icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box tomato-bg">
+          <div class="icons-img teddy"></div>
+          <h1>teddy</h1>
+          <a href="images/teddy.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- worm icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box yellowgreen-bg">
+          <div class="icons-img worm"></div>
+          <h1>worm</h1>
+          <a href="images/worm.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- chart icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box violet-bg">
+          <div class="icons-img chart"></div>
+          <h1>chart</h1>
+          <a href="images/chart.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- note-book icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box turquoise-bg">
+          <div class="icons-img note-book"></div>
+          <h1>note book</h1>
+          <a href="images/note-book.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- bug icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box thistle-bg">
+          <div class="icons-img bug"></div>
+          <h1>bug</h1>
+          <a href="images/bug.svg" download="download svg icon">svg</a>
+        </div>
+        <!-- table-lamp icon -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box teal-bg">
+          <div class="icons-img table-lamp"></div>
+          <h1>table lamp</h1>
+          <a href="images/table-lamp.svg" download="download svg icon">svg</a>
+        </div>
 
-
-        <!-- restart from calendar icon -->
+        <!-- Thanks -->
+        <div class="col-lg-3 col-md-3 col-sm-4 icon-box thanks-box">
+          <h1>Thank You :)</h1>
+        </div>
 
         <a href="#" class="close-icon">close</a>
 
       </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Preloaded script -->
+    <script type="text/javascript">
+      $(window).load(function() {
+        $("body").removeClass("preload");
+      });
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
